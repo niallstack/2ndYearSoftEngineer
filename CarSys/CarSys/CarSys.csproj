@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35C9A3E6-009F-4CA2-BE70-61335469F011}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CarSys</RootNamespace>
+    <AssemblyName>CarSys</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStaff.Designer.cs">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompleteRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompleteRepair.Designer.cs">
+      <DependentUpon>CompleteRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStaff.Designer.cs">
+      <DependentUpon>EditStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeAnalysis.Designer.cs">
+      <DependentUpon>IncomeAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListCustomer.Designer.cs">
+      <DependentUpon>ListCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListStaff.Designer.cs">
+      <DependentUpon>ListStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCarAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenCarAccount.Designer.cs">
+      <DependentUpon>OpenCarAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintServiceHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintServiceHistory.Designer.cs">
+      <DependentUpon>PrintServiceHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordRepair.Designer.cs">
+      <DependentUpon>RecordRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCustomer.Designer.cs">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveStaff.Designer.cs">
+      <DependentUpon>RemoveStaff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaff.resx">
+      <DependentUpon>AddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompleteRepair.resx">
+      <DependentUpon>CompleteRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStaff.resx">
+      <DependentUpon>EditStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeAnalysis.resx">
+      <DependentUpon>IncomeAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListCustomer.resx">
+      <DependentUpon>ListCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListStaff.resx">
+      <DependentUpon>ListStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenCarAccount.resx">
+      <DependentUpon>OpenCarAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintServiceHistory.resx">
+      <DependentUpon>PrintServiceHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RecordRepair.resx">
+      <DependentUpon>RecordRepair.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCustomer.resx">
+      <DependentUpon>RemoveCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveStaff.resx">
+      <DependentUpon>RemoveStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
